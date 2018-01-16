@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Анастасия Перевозченко](https://up.htmlacademy.ru/adaptive/13/user/603961).
-* Наставник: `Неизвестно`.
+* Наставник: Максим Протасов (https://htmlacademy.ru/profile/id209392).
 
 ---
 
