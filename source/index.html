@@ -8,23 +8,23 @@
 
     <header class="page-header">
     <a class="page-header__logo" href="/">
-      <img src="http://placehold.it/200x100" alt="HTML Academy: Мишка" title="HTML Academy: Мишка" class="page-header__logo-img" width="88px" height="36px">
+      <img class="page-header__logo-img" src="http://placehold.it/200x100" alt="HTML Academy: Мишка" title="HTML Academy: Мишка" width="88px" height="36px">
     </a>
     <nav class="main-menu">
       <button class="main-menu__toggle" type="button">Открыть меню</button>
       <div class="main-menu__wrap">
-        <ul class="main-menu__list menu-list">
+        <ul class="main-menu__list  menu-list">
           <li class="menu-list__item">
-            <a href="/catalog" class="menu-list__link">Каталог товаров</a>
+            <a class="menu-list__link" href="/catalog">Каталог товаров</a>
           </li>
           <li class="menu-list__item">
-            <a href="/order" class="menu-list__link">Вязание на заказ</a>
+            <a class="menu-list__link" href="/order">Вязание на заказ</a>
           </li>
           <li class="menu-list__item">
-            <a href="/search" class="menu-list__link">Поиск по сайту</a>
+            <a class="menu-list__link" href="/search">Поиск по сайту</a>
           </li>
           <li class="menu-list__item">
-            <a href="/basket" class="menu-list__link">Корзина: <span class="j-menu-basket">пока пуста</span></a>
+            <a class="menu-list__link" href="/basket">Корзина: <span class="j-menu-basket">пока пуста</span></a>
           </li>
         </ul>
       </div>
@@ -33,21 +33,21 @@
   </header>
   <main class="page-main">
     <header class="page-main__header">
-      <h1 class="header-h1">Милые штучки ручной работы для дома</h1>
+      <h1 class="title-primary">Милые штучки ручной работы для дома</h1>
     </header>
-    <section class="category page-main__category">
+    <section class="page-main__category  category">
       <ul class="category__list">
         <li class="category__item">
-          <a href="/catalog/interier" class="category__link">Предметы интерьера</a>
+          <a class="category__link" href="/catalog/interier">Предметы интерьера</a>
         </li>
         <li class="subcategory__item">
-          <a href="/catalog/toys" class="category__link">Детские игрушки</a>
+          <a class="category__link" href="/catalog/toys">Детские игрушки</a>
         </li>
       </ul>
     </section>
-    <section class="week-goods page-main__goods">
+    <section class="page-main__goods  week-goods">
       <header class="week-goods__header">
-        <h2 class="week-goods__h2 header-h2">Вязаные корзинки</h2>
+        <h2 class="week-goods__title title-second">Вязаные корзинки</h2>
         <span class="week-goods__subtitle">Товар недели</span>
       <header>
       <p class="week-goods__description">
@@ -69,32 +69,31 @@
           </tr>
         </tbody>
       </table>
-      <img src="http://placehold.it/260x314" alt="Goods image" class="week-goods__img">
+      <img class="week-goods__img" src="http://placehold.it/260x314" alt="Goods image" >
       <!-- Здесь может быть два варианта: img, если все картинки товара одинаковые, или div с подключаемым свойством background-image, если разные -->
       <div class="week-goods__price">
         Цена: 990 руб.
       </div>
-      <button class="button-main week-goods__button j-modal" type="button">Заказать</button>
+      <button class="week-goods__button  button-main  j-modal" type="button">Заказать</button>
     </section>
-    <section class="about-us page-main__about-us">
+    <section class="page-main__about-us  about-us">
       <header class="about-us__header">
-        <h2 class="about-us__h2 header-h2">Коротко о нас:</h2>
+        <h2 class="about-us__title  title-second">Коротко о нас:</h2>
       </header>
       <ul class="about-us__list">
-        <li class="about-us__list">Экологически чистые материалы</li>
-        <li class="about-us__list">Скандинавский стиль по российской цене</li>
-        <li class="about-us__list">Увеличивает лайки на фотографиях</li>
-        <li class="about-us__list">Связано вручную с любовью и умилением</li>
-        <li class="about-us__list">Поддержка отечественного производителя</li>
-        <li class="about-us__list">Поставляется в подарочной упаковке</li>
-      </ul>
+        <li class="about-us__item">Экологически чистые материалы</li>
+        <li class="about-us__item">Скандинавский стиль по российской цене</li>
+        <li class="about-us__item">Увеличивает лайки на фотографиях</li>
+        <li class="about-us__item">Связано вручную с любовью и умилением</li>
+        <li class="about-us__item">Поддержка отечественного производителя</li>
+        <li class="about-us__item">Поставляется в подарочной упаковке</li>
       </ul>
     </section>
-    <section class="review page-main__review">
+    <section class="page-main__review  review">
       <header class="review__header">
-        <h2 class="review__h2 header-h2">Отзывы:</h2>
+        <h2 class="review__title  title-second">Отзывы:</h2>
       </header>
-      <div class="review__slider slider">
+      <div class="review__slider  slider">
         <ul class="slider__list">
           <li class="slider__item">
             <article class="review__content">
@@ -143,22 +142,18 @@
           </li>
         </ul>
         <div class="slider__arrows">
-          <a href="#" class="slider__arrow-link">
-            <div class="slider__arrow-left"></div>
-          </a>
-          <a href="#" class="slider__arrow-link">
-            <div class="slider__arrow-right"></div>
-          </a>
+          <button class="slider__arrow-left" type="button"></button>
+          <button class="slider__arrow-right" type="button"></button>
         </div>
       </div>
-      <button class="button-main review__button" type="button">Написать</button>
+      <button class="review__button  button-main" type="button">Написать</button>
     </section>
   </main>
   
   <footer class="page-footer">
     <section class="contact-info">
       <header class="contact-info__header">
-        <h2 class="contact-info__h2 header-h2">Контакты:</h2>
+        <h2 class="contact-info__title  title-second">Контакты:</h2>
       </header>
       <div class="contact-info__table">
         <div class="contact-info__table-row">
@@ -179,11 +174,11 @@
         </div>
       </div>
     </section>
-    <div class="map page-footer__map">
+    <div class="page-footer__map  map">
       <img src="http://placehold.it/260x454" alt="Как добраться" class="map__img">
     </div>
     <div class="page-footer__message">
-      <button class="button-main page-footer__button" type="button">Напишите нам</button>
+      <button class="page-footer__button  button-main" type="button">Напишите нам</button>
     </div>
     <section class="credits">
       <div class="credits__social">
@@ -196,26 +191,32 @@
       </div>
     </section>
   </footer>
-  <div class="modal">
+  <div class="modal  j-modal">
     <div class="modal__wrap">
-      <form class="modal__form" id="modal_form" method="get" action="https://echo.htmlacademy.ru">
-          <h2 class="modal__h2 header-h2">Добавить в&nbsp;корзину</h2>
+      <form class="modal__form" method="get" action="https://echo.htmlacademy.ru">
+          <h2 class="modal__title  title-second">Добавить в&nbsp;корзину</h2>
         <p class="modal__text">Выберите размер:</p>
         <ul class="modal__size">
           <li class="modal__select-item">
-            <input type="radio" name="size" value="s" id="size-s" required checked >
-            <label for="size-s">s</label>
+            <label class="modal__label">
+              <input class="modal__input" type="radio" name="size" value="s" required checked >
+              <span>s</span>
+            </label>
           </li>
           <li class="modal__select-item">
-            <input type="radio" name="size" value="m" id="size-m" required >
-            <label for="size-m">m</label>
+            <label class="modal__label">
+              <input class="modal__input" type="radio" name="size" value="m">
+              <span>m</span>
+            </label>
           </li>
           <li class="modal__select-item">
-            <input type="radio" name="size" value="l" id="size-l" required >
-            <label for="size-l">l</label>
+            <label class="modal__label">
+              <input class="modal__input" type="radio" name="size" value="l">
+              <span>l</span>
+            </label>
           </li>
         </ul>
-        <button class="button-main modal__button" type="submit">Добавить</button>
+        <button class="modal__button  button-main" type="submit">Добавить</button>
       </form>
     </div>
   </div>
