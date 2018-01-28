@@ -1,0 +1,30 @@
+.menu-list {
+  list-style: none;
+}
+.menu-list__item {
+  height: 80px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  font-size: 17px;
+  line-height: 1.4em;
+  font-weight: bold;
+  text-align: left;
+  border-bottom: 1px solid #ececec;
+  &:first-of-type {
+    border-top: 1px solid #ececec;
+  }
+}
+.menu-list__link {
+  display: block;
+  height: 79px;
+  padding: 30px 30px 30px 76px;
+  box-sizing: border-box;
+  color: #000000;
+  text-decoration: none;
+  &:hover {
+    color: lighten(#000000, 40%);
+  }
+  &:active {
+    color: lighten(#000000, 70%);
+  }
+}
