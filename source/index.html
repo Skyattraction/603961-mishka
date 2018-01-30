@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="less/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
   <header class="page-header">
-    <a class="page-header__logo" href="/">
+    <a class="page-header__logo" href="index.html">
       <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="HTML Academy: Мишка" title="HTML Academy: Мишка" width="88px" height="36px">
     </a>
     <nav class="main-menu">
@@ -16,16 +18,16 @@
       <div class="main-menu__wrap">
         <ul class="main-menu__list  menu-list">
           <li class="menu-list__item">
-            <a class="menu-list__link" href="/catalog">Каталог товаров</a>
+            <a class="menu-list__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="menu-list__item">
-            <a class="menu-list__link" href="/order">Вязание на заказ</a>
+            <a class="menu-list__link" href="form.html">Вязание на заказ</a>
           </li>
           <li class="menu-list__item">
-            <a class="menu-list__link" href="/search">Поиск по сайту</a>
+            <a class="menu-list__link" href="#">Поиск по сайту</a>
           </li>
           <li class="menu-list__item">
-            <a class="menu-list__link" href="/basket">Корзина: <span class="j-menu-basket">пока пуста</span></a>
+            <a class="menu-list__link" href="#">Корзина: <span class="j-menu-basket">пока пуста</span></a>
           </li>
         </ul>
       </div>
@@ -33,7 +35,7 @@
   </header>
   <main class="page-main">
     <header class="page-main__header">
-      <h1 class="title-primary">Милые штуки ручной работы для&nbsp;дома</h1>
+      <h1 class="title  title--primary">Милые штуки ручной работы для&nbsp;дома</h1>
     </header>
     <section class="page-main__category  category">
       <ul class="category__list">
@@ -47,8 +49,8 @@
     </section>
     <section class="page-main__goods  week-goods">
       <header class="week-goods__header">
-        <h2 class="week-goods__title title-second">Вязаные корзинки</h2>
-        <span class="week-goods__subtitle">Товар недели</span>
+        <h2 class="week-goods__title  title  title--second">Вязаные корзинки</h2>
+        <div class="week-goods__subtitle">Товар недели</div>
       <header>
       <p class="week-goods__description">
         Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.
@@ -78,7 +80,7 @@
     </section>
     <section class="page-main__about-us  about-us">
       <header class="about-us__header">
-        <h2 class="about-us__title  title-second">Коротко о нас:</h2>
+        <h2 class="about-us__title  title  title--second">Коротко о нас:</h2>
       </header>
       <ul class="about-us__list">
         <li class="about-us__item about-us__item--eco">Экологически чистые материалы</li>
@@ -91,7 +93,7 @@
     </section>
     <section class="page-main__review  review">
       <header class="review__header">
-        <h2 class="review__title  title-second">Отзывы:</h2>
+        <h2 class="review__title  title  title--second">Отзывы:</h2>
       </header>
       <div class="review__slider  slider">
         <ul class="slider__list">
@@ -152,7 +154,7 @@
   <footer class="page-footer">
     <section class="contact-info">
       <header class="contact-info__header">
-        <h2 class="contact-info__title  title-second">Контакты:</h2>
+        <h2 class="contact-info__title  title  title--second">Контакты:</h2>
       </header>
       <div class="contact-info__table">
         <div class="contact-info__table-row">
@@ -186,14 +188,14 @@
         <a class="credits__social-item credits__social-item--twitter" href="#"></a>
       </div>
       <div class="credits__developer">
-        Разработано <span class="credits__developer-logo"></span>
+        Разработано <a class="credits__developer-logo" href="https://htmlacademy.ru" target="_blank"></a>
       </div>
     </section>
   </footer>
   <div class="modal  j-modal">
     <div class="modal__wrap">
       <form class="modal__form" method="get" action="https://echo.htmlacademy.ru">
-          <h2 class="modal__title  title-second">Добавить в&nbsp;корзину</h2>
+          <h2 class="modal__title  title  title--second">Добавить в&nbsp;корзину</h2>
         <p class="modal__text">Выберите размер:</p>
         <ul class="modal__size">
           <li class="modal__select-item">

@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="less/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
   <header class="page-header">
-    <a class="page-header__logo" href="/">
+    <a class="page-header__logo" href="index.html">
       <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="HTML Academy: Мишка" title="HTML Academy: Мишка" width="88px" height="36px">
     </a>
     <nav class="main-menu">
@@ -16,16 +18,16 @@
       <div class="main-menu__wrap">
         <ul class="main-menu__list  menu-list">
           <li class="menu-list__item">
-            <a class="menu-list__link" href="/catalog">Каталог товаров</a>
+            <a class="menu-list__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="menu-list__item">
-            <a class="menu-list__link" href="/order">Вязание на заказ</a>
+            <a class="menu-list__link" href="form.html">Вязание на заказ</a>
           </li>
           <li class="menu-list__item">
-            <a class="menu-list__link" href="/search">Поиск по сайту</a>
+            <a class="menu-list__link" href="#">Поиск по сайту</a>
           </li>
           <li class="menu-list__item">
-            <a class="menu-list__link" href="/basket">Корзина: <span class="j-menu-basket">пока пуста</span></a>
+            <a class="menu-list__link" href="#">Корзина: <span class="j-menu-basket">пока пуста</span></a>
           </li>
         </ul>
       </div>
@@ -33,7 +35,7 @@
   </header>
   <main class="page-form">
     <header class="page-form__header">
-      <h1 class="title-primary">Вязание на заказ</h1>
+      <h1 class="title  title--primary">Вязание на заказ</h1>
     </header>
     <section class="page-form__order">
       <form class="order-form" method="post" action="https://echo.htmlacademy.ru">
@@ -136,7 +138,7 @@
         <a class="credits__social-item credits__social-item--twitter" href="#"></a>
       </div>
       <div class="credits__developer">
-        Разработано <span class="credits__developer-logo"></span>
+        Разработано <a class="credits__developer-logo" href="https://htmlacademy.ru" target="_blank"></a>
       </div>
     </section>
   </footer>

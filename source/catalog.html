@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Мишка</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="less/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
 
   <header class="page-header">
-    <a class="page-header__logo" href="/">
+    <a class="page-header__logo" href="index.html">
       <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="HTML Academy: Мишка" title="HTML Academy: Мишка" width="88px" height="36px">
     </a>
     <nav class="main-menu">
@@ -16,16 +18,16 @@
       <div class="main-menu__wrap">
         <ul class="main-menu__list  menu-list">
           <li class="menu-list__item">
-            <a class="menu-list__link" href="/catalog">Каталог товаров</a>
+            <a class="menu-list__link" href="catalog.html">Каталог товаров</a>
           </li>
           <li class="menu-list__item">
-            <a class="menu-list__link" href="/order">Вязание на заказ</a>
+            <a class="menu-list__link" href="form.html">Вязание на заказ</a>
           </li>
           <li class="menu-list__item">
-            <a class="menu-list__link" href="/search">Поиск по сайту</a>
+            <a class="menu-list__link" href="#">Поиск по сайту</a>
           </li>
           <li class="menu-list__item">
-            <a class="menu-list__link" href="/basket">Корзина: <span class="j-menu-basket">пока пуста</span></a>
+            <a class="menu-list__link" href="#">Корзина: <span class="j-menu-basket">пока пуста</span></a>
           </li>
         </ul>
       </div>
@@ -33,12 +35,14 @@
   </header>
   <main class="page-catalog">
     <header class="page-catalog__header">
-      <h1 class="title-primary">Каталог товаров</h1>
+      <h1 class="title  title--primary">Каталог товаров</h1>
     </header>
     <section class="page-catalog__list  catalog">
       <article class="catalog__item  goods">
-        <img class="goods__img" src="img/photo-hare-mobile@1x.jpg" alt="Goods image">
-        <h3 class="goods__title  title-third">Зайчик-попрыгайчик</h3>
+	    <a class="goods__link" href="#">
+          <img class="goods__img" src="img/photo-hare-mobile@1x.jpg" alt="Goods image">
+		</a>
+        <a class="goods__title" href="#">Зайчик-попрыгайчик</a>
         <div class="goods__options">Рост 30 см, вес 200 г</div>
         <div class="goods__price">
           <span>1 200 руб.</span>
@@ -46,8 +50,10 @@
         </div>
       </article>
       <article class="catalog__item  goods">
-        <img class="goods__img" src="img/photo-bowl-mobile@1x.jpg" alt="Goods image">
-        <h3 class="goods__title  title-third">Корзинка для белья</h3>
+	    <a class="goods__link" href="#">
+          <img class="goods__img" src="img/photo-bowl-mobile@1x.jpg" alt="Goods image">
+		</a>
+        <a class="goods__title" href="#">Корзинка для белья<a>
         <div class="goods__options">Диаметр 15 см, высота 10 см</div>
         <div class="goods__price">
           <span>690 руб.</span>
@@ -55,8 +61,10 @@
         </div>
       </article>
       <article class="catalog__item  goods">
-        <img class="goods__img" src="img/photo-toys-mobile@1x.jpg" alt="Goods image">
-        <h3 class="goods__title  title-third">Большая корзинка для игрушек</h3>
+	    <a class="goods__link" href="#">
+          <img class="goods__img" src="img/photo-toys-mobile@1x.jpg" alt="Goods image">
+		</a>
+        <a class="goods__title" href="#">Большая корзинка для игрушек</a>
         <div class="goods__options">Диаметр 30 см, высота 30 см</div>
         <div class="goods__price">
           <span>1 500 руб.</span>
@@ -66,7 +74,7 @@
     </section>
     <section class="page-catalog__video  video">
       <header class="video__header">
-        <h2 class="video__title  title-second">Процесс производства:</h2>
+        <h2 class="video__title  title  title--second">Процесс производства:</h2>
       </header>
       <video class="video__file" width="258" height="150" preload="metadata" poster="img/video-mobile@1x.jpg">
         <source src="video.mp4" type="video/mp4">
@@ -90,14 +98,14 @@
         <a class="credits__social-item credits__social-item--twitter" href="#"></a>
       </div>
       <div class="credits__developer">
-        Разработано <span class="credits__developer-logo"></span>
+        Разработано <a class="credits__developer-logo" href="https://htmlacademy.ru" target="_blank"></a>
       </div>
     </section>
   </footer>
   <div class="modal  j-modal">
     <div class="modal__wrap">
       <form class="modal__form" method="get" action="https://echo.htmlacademy.ru">
-          <h2 class="modal__title  title-second">Добавить в&nbsp;корзину</h2>
+          <h2 class="modal__title  title  title--second">Добавить в&nbsp;корзину</h2>
         <p class="modal__text">Выберите размер:</p>
         <ul class="modal__size">
          <li class="modal__select-item">
