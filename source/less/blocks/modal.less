@@ -82,6 +82,19 @@
 .modal__input:checked ~ .modal__label {
   border: 2px solid @teal-light;
 }
-.modal__button {
-  
+
+@media (min-width: 768px) {
+  .modal__form {
+    padding: 46px 107px;
+  }
+  .modal--active .modal__form {
+    width: 567px;
+  }
+  .modal__button {
+    max-width: 230px;
+  }
+  .modal--active .modal__button {
+    max-width: 100%;
+  }
 }
+

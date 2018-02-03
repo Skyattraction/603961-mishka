@@ -1,5 +1,6 @@
 .goods {
-  width: 260px;
+  display: flex;
+  flex-direction: column;
   min-height: 374px;
   box-sizing: border-box;
   background-color: @white;
@@ -44,4 +45,46 @@
 }
 .goods__order {
 
+}
+@media (min-width: 768px) {
+  .goods {
+    flex-direction: row;
+    width: 100%;
+    height: 334px;
+    min-height: 0;
+  }
+  .goods__link {
+    flex-basis: 50%;
+    margin: 0;
+    overflow: hidden;
+  }
+  .goods__img {
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .goods__info {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+  }
+  .goods__title {
+    margin-top: 26px;
+  }
+  .goods__price {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+  }
+}
+
+@media (min-width: 1150px) {
+  .goods {
+    flex-direction: column;
+    width: 28%;
+    height: 656px;
+  }
+  .goods__link {
+    flex-basis: 100%;
+    height: 462px;
+  }
 }

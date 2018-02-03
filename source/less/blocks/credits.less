@@ -2,6 +2,9 @@
   background-color: #f1f1f1;
   padding: 0 30px; 
 }
+.credits__logo {
+  display: none;
+}
 .credits__social {
   padding-top: 25px;
   height: 80px;
@@ -36,7 +39,7 @@
   box-sizing: border-box;
   font-size: 19px;
   line-height: 1em;
-  fpnt-weight: bold;
+  font-weight: bold;
   border-top: 1px solid #e5e5e5;
 }
 .credits__developer-logo {
@@ -46,4 +49,29 @@
   height: 34px;
   background: url(../img/logo-htmlacademy.svg) 0 0 no-repeat scroll transparent;
   background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .credits {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 145px;
+  }
+  .credits__logo {
+    display: block;
+  }
+  .credits__developer {
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+    border-top: none;
+  }
+  .credits__developer-logo {
+    margin-left: 28px;
+  }
+}
+
+@media (min-width: 1150px) {
+  
 }
