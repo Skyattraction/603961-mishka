@@ -3,6 +3,7 @@
   margin-top: auto;
   background-color: @teal-light;
 }
+
 .category__list {
   display: flex;
   flex-direction: column;
@@ -11,6 +12,7 @@
   padding: 0;
   list-style: none;
 }
+
 .category__item {
   display: block;
   margin: 0;
@@ -19,6 +21,7 @@
   font-size: 19px;
   line-height: 1.26em;
 }
+
 .category__link {
   position: relative;
   display: block;
@@ -29,13 +32,16 @@
   font-weight: bold;
   text-decoration: none;
   background-color: @teal-light;
+
   &--toys {
     background-color: #56c3b2;
   }
+
   &:hover {
     color: @white;
     text-decoration: none;
   }
+
   &::after {
     content: "";
     position: absolute;
@@ -48,6 +54,7 @@
     background-size: cover;
     opacity: 0.5;
   }
+
   &--toys::after {
     right: 27px;
     top: 21px;
@@ -63,6 +70,7 @@
   .category__list {
     flex-direction: row;
   }
+
   .category__item {
     flex-basis: 50%;
   }
